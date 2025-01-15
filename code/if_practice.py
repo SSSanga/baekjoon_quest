@@ -1,16 +1,68 @@
-# #14681번 사분면 고르기
-[x, y] = [input() for _ in range(2)]
+# 2525번
+# 자동 끝나는시간 계산
+# 첫번째 줄 현재시각 (0<=A<=23, 0<=B<=59)
+# 두번째 줄 필요시간 분단위 주어짐 (0<=C<=1000)
+A, B = map(int, input().split())
+C = int(input())
 
-if x > 0 and y > 0 :
-    print(1)
-elif x < 0 and y > 0 :
-    print(2)
-elif x < 0 and y < 0 :
-    print(3)
-elif x > 0 and y < 0 :
-    print(4)
-else :
-    None
+# 총 분 계산
+total_minutes = B + C
+
+# 시(hour)와 분(minute)으로 나누기
+new_hour = (A + total_minutes // 60) % 24
+new_minute = total_minutes % 60
+
+# 결과 출력
+print(new_hour, new_minute)
+
+# A, B = map(int, input().split())
+# C = int(input())
+
+# if 0 < B+C <=59 :
+#     print (A, B+C)
+# elif 59 < B+C <=1000:
+#     if 0<= A <=23 :
+#         print((A + (B+C)//60)//24, (B+C)%60)
+#     elif 23 == A:
+#         print ()
+
+
+# if 0<= B+C <= 59 :
+#     if 0 < A + (B+C//60) <= 23 and 0 == (B+C)//60 :
+#         print (A, (B+C)%60)
+#     elif 24 < A + (B+C//60):
+#         print ((A + (B+C//60)//24), (B+C)%60)
+#     elif 24 == A + (B+C//60):
+#         print( 0 , (B+C)%60)
+
+# # 2884번 알람시계
+# # 45분 일찍 알람 설정하기 
+# #첫째 줄 : 두 정수 H, M(0<= H <= 23, 0<= M <= 59)
+# #입력시간 24시간 표현 하루 시작 0:0 끝 23:59 
+# H, M = map(int, input().split())
+
+# if 0 <= H <= 23 and 45 <= M <= 59 :
+#     print (H, M-45)
+# elif 1 <= H <= 23 and 0 <= M < 45 :
+#     print (H-1, M+15)
+# elif 0 == H and 0 <=M <45:
+#     print (23, M+15)
+
+
+
+# # #14681번 사분면 고르기
+# [x, y] = [input() for _ in range(2)]
+
+# if x > 0 and y > 0 :
+#     print(1)
+# elif x < 0 and y > 0 :
+#     print(2)
+# elif x < 0 and y < 0 :
+#     print(3)
+# elif x > 0 and y < 0 :
+#     print(4)
+# else :
+#     None
 
 # # 2753 윤년
 # # 윤년이면 1, 아니면 0 
