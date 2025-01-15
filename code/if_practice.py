@@ -1,19 +1,42 @@
+# 2480번 주사위 세개
+# 같은 눈 3개 나오면 1만원 + 같은눈 X 1000원 
+# 같은 눈 2개 나오면 1000원 + 같은눈 X 100원
+# 모두 다른 눈이면 그중 가장 큰눈 X 100원 
+A, B, C = map(int, input().split())
+
+if A== B == C :
+    print(10000+(A*1000))
+elif A==B :
+    print(1000+(A*100))
+elif  B==C :
+    print(1000+(B*100))
+elif  A==C :
+    print(1000+(C*100))
+elif A > B and A >C :
+    print(A*100)
+elif B > A and B >C :
+    print(B*100)
+elif C > A and C >B :
+    print(C*100)
+
+
+
 # 2525번
 # 자동 끝나는시간 계산
 # 첫번째 줄 현재시각 (0<=A<=23, 0<=B<=59)
 # 두번째 줄 필요시간 분단위 주어짐 (0<=C<=1000)
-A, B = map(int, input().split())
-C = int(input())
+# A, B = map(int, input().split())
+# C = int(input())
 
-# 총 분 계산
-total_minutes = B + C
+# # 총 분 계산
+# total_minutes = B + C
 
-# 시(hour)와 분(minute)으로 나누기
-new_hour = (A + total_minutes // 60) % 24
-new_minute = total_minutes % 60
+# # 시(hour)와 분(minute)으로 나누기
+# new_hour = (A + total_minutes // 60) % 24
+# new_minute = total_minutes % 60
 
-# 결과 출력
-print(new_hour, new_minute)
+# # 결과 출력
+# print(new_hour, new_minute)
 
 # A, B = map(int, input().split())
 # C = int(input())
