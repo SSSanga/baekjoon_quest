@@ -1,23 +1,23 @@
-# 2480번 주사위 세개
-# 같은 눈 3개 나오면 1만원 + 같은눈 X 1000원 
-# 같은 눈 2개 나오면 1000원 + 같은눈 X 100원
-# 모두 다른 눈이면 그중 가장 큰눈 X 100원 
-A, B, C = map(int, input().split())
+# # 2480번 주사위 세개
+# # 같은 눈 3개 나오면 1만원 + 같은눈 X 1000원 
+# # 같은 눈 2개 나오면 1000원 + 같은눈 X 100원
+# # 모두 다른 눈이면 그중 가장 큰눈 X 100원 
+# A, B, C = map(int, input().split())
 
-if A== B == C :
-    print(10000+(A*1000))
-elif A==B :
-    print(1000+(A*100))
-elif  B==C :
-    print(1000+(B*100))
-elif  A==C :
-    print(1000+(C*100))
-elif A > B and A >C :
-    print(A*100)
-elif B > A and B >C :
-    print(B*100)
-elif C > A and C >B :
-    print(C*100)
+# if A== B == C :
+#     print(10000+(A*1000))
+# elif A==B :
+#     print(1000+(A*100))
+# elif  B==C :
+#     print(1000+(B*100))
+# elif  A==C :
+#     print(1000+(C*100))
+# elif A > B and A >C :
+#     print(A*100)
+# elif B > A and B >C :
+#     print(B*100)
+# elif C > A and C >B :
+#     print(C*100)
 
 
 
