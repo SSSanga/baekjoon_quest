@@ -1,6 +1,34 @@
-## 8393 합 n이 주어졌을 때, 1부터 n 까지 합을 구함 
-n = int(input())
-print(sum(range(1, n + 1)))
+#25314 코딩은 체육과목입니닼
+# long int = 4 byte, long long int = 8 byte 
+# long * n = 4 * n byte
+
+N = int(input())
+a = N//4
+
+# for i in range(1, (N/4)+1) :
+#     i =+i
+#     print ("long")
+
+
+# # 25304 영수증
+# X = int(input())
+# N = int(input())
+# list = []
+# for i in range(1, N+1) :
+#     a, b = map(int, input().split())
+#     list.append(a * b)
+#     i +=i
+# if X == sum(list) :
+#     print('Yes')
+# else : print('No')
+
+
+
+
+
+# ## 8393 합 n이 주어졌을 때, 1부터 n 까지 합을 구함 
+# n = int(input())
+# print(sum(range(1, n + 1)))
 
 
 # n = int(input())
